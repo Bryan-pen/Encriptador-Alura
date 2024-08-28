@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alura Latam</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="contenedor">
+        <h1>Alura Latam</h1>
+        
+        <div class="contenido">
+            <div class="bloque encriptar">
+                <h2>Encriptar Texto <span class="candado candado-cerrado"></span></h2>
+                <p class="advertencia">No se permiten mayúsculas ni acentos.</p>
+                <textarea id="entradaEncriptar" placeholder="Ingrese su texto aquí..."></textarea>
+                <button onclick="encriptarTexto()">Encriptar</button>
+                <textarea id="salidaEncriptar" placeholder="Texto encriptado aparecerá aquí..." readonly></textarea>
+                <button onclick="copiarAlPortapapeles('salidaEncriptar')" class="boton-copiar">Copiar</button>
+            </div>
+
+            <div class="bloque desencriptar">
+                <h2>Desencriptar Texto <span class="candado candado-abierto"></span></h2>
+                <textarea id="entradaDesencriptar" placeholder="Ingrese texto encriptado aquí..."></textarea>
+                <button onclick="pegarDelPortapapeles()" class="boton-pegar">Pegar</button>
+                <button onclick="desencriptarTexto()">Desencriptar</button>
+                <textarea id="salidaDesencriptar" placeholder="Texto desencriptado aparecerá aquí..." readonly></textarea>
+            </div>
+        </div>
+        <video muted autoplay loop>
+            <source src="./video/fondo.mp4" >
+        </video>
+        <div class="capa"></div>
+    </div>
+    <footer>
+        <p>Creado por Bryan Pariona</p>
+        <a href="https://github.com/Bryan-pen"><img src="video/github.png" ></a>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
